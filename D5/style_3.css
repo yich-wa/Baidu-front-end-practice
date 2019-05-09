@@ -1,0 +1,95 @@
+body{
+	margin: auto;
+	margin:3em;
+	/*border: solid;*/ 
+	overflow: auto;
+	zoom:1;
+	font-size: 20px;
+}
+div{
+	margin: 0;
+	border: 0;
+	padding:0;
+}
+#first_div{
+	height: 120px;
+	width: 1620.5px;
+	border:solid;
+	border-width: 0.01em;
+	background-color: orange;
+	padding: 0;
+
+/*	padding: 0；*/
+
+}
+#first_div h1{
+	color: white;
+	/*margin: 3em;*/
+	margin-left:2em;
+	line-height: 120px;
+	padding-bottom: 3em;
+	margin-block-start:0em;
+}
+.level_1{
+	margin: 0;
+	overflow: auto;
+	zoom:1;
+
+}
+.level_2{
+	display: inline;
+	float: left;
+	height: 150px;
+	width: 1400px;
+	border: solid;
+	border-width: 0.01em;
+	border-top: 0;
+	overflow: hidden;
+}
+.left_title{
+	width: 220px;
+	height: 150px;
+	background-color: orange;
+	border: solid;
+	border-width: 0.01em;
+	border-right: 0;
+	border-top: 0;
+	padding-left: 0;
+}
+h2{
+	text-align: center;
+	line-height: 150px;
+	font-size: 1.5em;
+	margin-block-start:0em;
+	
+}
+.level_3 p{
+	display: inline;
+	float: left;
+	overflow: hidden;
+	margin: 0.2em;
+	margin-top:0.6em;
+}
+.level_3{
+	overflow: auto;
+	zoom:1;
+}
+/*body div{
+	float: left;
+	display: inline;
+	margin-right: 1em;
+}*/
+body ul{
+	list-style: none;
+	overflow:auto;
+	zoom:1;
+	padding-inline-start:0px; 
+}
+li{
+	list-style: none;
+	display: inline;
+	float: left;
+	padding-right: 3em;
+	margin: 0.2em;
+	margin-top: 0em;
+}

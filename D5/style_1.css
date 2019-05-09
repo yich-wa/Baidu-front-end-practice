@@ -1,0 +1,41 @@
+body{
+	margin: auto;
+	margin:2em;
+	/*border: solid;*/
+	padding:0.6em;
+	width:90%; 
+	/*overflow: auto;
+	zoom:1;*/
+	font-size: 22px;
+}
+#first_div{
+
+	background-color: orange;
+}
+
+#first_div h1{
+	color: white;
+	/*width: 100%;
+	height: 100%;*/
+	margin: 3em;
+	margin-bottom:22.5em;
+}
+
+.level_0{
+	padding-top: 0;
+	float: left;
+	display: inline;
+	margin-right: 1em;
+}
+body ul{
+	list-style: none;
+	overflow:auto;
+	zoom:1;
+	padding-inline-start:0px; 
+}
+li{
+	list-style: none;
+	display: inline;
+	float: left;
+	padding-right: 3em;
+}

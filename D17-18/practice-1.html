@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+</head>
+<body>        
+    <input id="first-number"  value="0" placeholder="第一个数字">
+    <input id="second-number"  value="0" placeholder="第二个数字">
+    <button id="add-btn">加</button>
+    <button id="minus-btn">减</button>
+    <button id="times-btn">乘</button>
+    <button id="divide-btn">除</button>
+    <p id="result">运算结果</p>
+    <script>
+        //判断输入数字是否合格函数,判断输入的内容能不能解析成合法数字。
+        //最后发现用isNaN()函数是最方便的。// 或者还原题中本来就给的
+        // 输入框中的   type = "number";
+        document.getElementById("add-btn").onclick = function(){
+            var num1 = document.getElementById("first-number").value;
+            var num2= document.getElementById("second-number").value;
+            if(isNaN(num1)){
+                console.log("输入的第一个数字不符合要求！");
+                return;
+            }
+            if(isNaN(num2)){
+                console.log("输入的第二个数字不符合要求！");
+                return;
+            }
+            var num3=parseInt(num1)+parseInt(num2);
+            document.getElementById("result").innerHTML = "运算结果" + num3;
+            
+        }
+
+         document.getElementById("minus-btn").onclick = function(){
+            var num1 = document.getElementById("first-number").value;
+            var num2= document.getElementById("second-number").value;
+            if(isNaN(num1)){
+                console.log("输入的第一个数字不符合要求！");
+                return;
+            }
+            if(isNaN(num2)){
+                console.log("输入的第二个数字不符合要求！");
+                return;
+            }
+            var num3=parseInt(num1)-parseInt(num2);
+            document.getElementById("result").innerHTML = "运算结果" + num3;
+        }
+
+         document.getElementById("times-btn").onclick = function(){
+            var num1 = document.getElementById("first-number").value;
+            var num2= document.getElementById("second-number").value;
+            if(isNaN(num1)){
+                console.log("输入的第一个数字不符合要求！");
+                return;
+            }
+            if(isNaN(num2)){
+                console.log("输入的第二个数字不符合要求！");
+                return;
+            }
+            var num3=parseInt(num1)*parseInt(num2);
+            document.getElementById("result").innerHTML = "运算结果" + num3;
+        }
+
+         document.getElementById("divide-btn").onclick = function(){
+            var num1 = document.getElementById("first-number").value;
+            var num2= document.getElementById("second-number").value;
+            if(isNaN(num1)){
+                console.log("输入的第一个数字不符合要求！");
+                return;
+            }
+            if(isNaN(num2)){
+                console.log("输入的第二个数字不符合要求！");
+                return;
+            }
+            if(num2!=0){
+                var num3=parseInt(num1)/parseInt(num2);
+                document.getElementById("result").innerHTML = "运算结果" + num3;
+            }else{
+                console.log("除数为零了！");
+            }
+            
+        }
+
+
+    </script>
+</body>
+</html>
